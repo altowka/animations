@@ -5,41 +5,41 @@ https://github.com/Team-Code/KA_Offline -->
 
 <head>
     <title>Processing.JS inside Webpages: Template</title>
-    <!-- <script src="processing-1.4.8.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <div style="display: flex; justify-content: space-between;">
-        <p>
-            <!--This draws the Canvas on the webpage -->
-            <canvas id="mycanvas"></canvas>
-            <button class="myButton" onclick="city()">once again</button>
-        </p>
-        <p>
-            <!--This draws the Canvas on the webpage -->
-            <canvas id="mycanvas1"></canvas>
-        </p>
-        <p>
-            <!--This draws the Canvas on the webpage -->
-            <canvas id="mycanvas2"></canvas>
-        </p>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>These are examples of my animations written in processing.js</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 animations">
+            <canvas class="canvas" id="mycanvas"></canvas>
+            <div>
+                <button class="btn btn-primary" onclick="city()">once again</button>
+            </div>
+        </div>
+        <div class="col-md-4 animations">
+            <canvas class="canvas" id="mycanvas1"></canvas>
+        </div>
+        <div class="col-md-4 animations">
+            <canvas class="canvas" id="mycanvas2"></canvas>
+        </div>
     </div>
 
 
     <canvas data-processing-sources="hello-web.pde"></canvas>
     <canvas data-processing-sources="processing.pde"></canvas>
     <canvas data-processing-sources="processing2.pde"></canvas>
-    
+
 </body>
 
-<!-- Run all the JavaScript stuff -->
-<!-- Include the processing.js library -->
-<!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
 <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
-
-<!-- <script src=index.js></script> -->
 <script src="city.js"></script>
 <script src="fish.js"></script>
 <script src="skate.js"></script>
