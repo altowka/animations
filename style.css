@@ -1,10 +1,11 @@
-body{
+body {
     background: linear-gradient(#f3e0c7d5, #e98b21)
 }
 
 .animations {
     margin: none !important;
     padding: none !important;
+    text-align: center;
 }
 
 .canvas {
@@ -14,4 +15,5 @@ body{
 
 h1 {
     margin-top: 20px;
+    text-align: center;
 }
